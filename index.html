@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stellar Dodge</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Canvas arcade</p>
+          <h1>Stellar Dodge</h1>
+        </div>
+        <div class="stats" aria-label="Game stats">
+          <div><span>Score</span><strong id="score">0</strong></div>
+          <div><span>Best</span><strong id="best">0</strong></div>
+          <div><span>Shield</span><strong id="shield">0</strong></div>
+        </div>
+      </header>
+
+      <section class="arena-wrap">
+        <canvas id="game" width="960" height="620"></canvas>
+        <div class="overlay" id="overlay">
+          <h2 id="overlayTitle">Ready</h2>
+          <p id="overlayText">Press Space or tap the field.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
